@@ -23,8 +23,8 @@ jobs:
         run: |
           go install -v golang.org/x/tools/gopls@$GOPLS_VERSION
           $dir = pwd
-          cd $PATH\go\bin
-          & tar -czvf $dir\gopls.tar.gz gopls
+          cd /home/runner/go/bin
+          & tar -czvf $dir/gopls.tar.gz gopls
         env:
           GO111MODULE: on
 
