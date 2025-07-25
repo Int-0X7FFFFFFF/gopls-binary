@@ -11,6 +11,7 @@ jobs:
   build:
     name: Build and release
     runs-on: windows-latest
+    
     env:
       GOPLS_VERSION: v0.15.3
     steps:
